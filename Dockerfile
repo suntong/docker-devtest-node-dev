@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN apt-get update
-RUN npm install -g nodemon; npm install
+RUN npm install -g node-dev; npm install
 
 COPY . /app
 # -or-
